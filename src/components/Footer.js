@@ -4,7 +4,7 @@ import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-sv
 
 function Footer() {
     return (
-        <footer className="bg-dark text-light pt-4 pb-3 mt-auto">
+        <footer className="text-light pt-4 pb-3 mt-auto">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col md-3 text-center text-md-start mb-3 mb-md-0">
