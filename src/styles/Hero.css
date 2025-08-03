@@ -1,0 +1,35 @@
+.hero{
+  background-color: #495E57;
+  padding: 2rem 0;
+}
+.hero h1{
+  color: #F4CE14;
+  font-family: 'Markazi Text', serif;
+  font-size: 64px;
+}
+
+.hero h2{
+  font-family: 'Markazi Text', serif;
+  font-size: 40px;
+}
+
+.hero-img {
+  border-radius: 15px;
+}
+
+.hero-btn{
+  background-color: #F4CE14;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.75rem 2rem;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  font-family: 'Markazi Text', serif;
+}
+
+.hero-btn:hover {
+  background-color: #e6bc10;
+  color: #000;
+}
