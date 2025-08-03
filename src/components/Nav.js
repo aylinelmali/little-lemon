@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { HashLink } from 'react-router-hash-link';
 import logo from "../assets/logo.jpg";
 
 function Nav() {
@@ -15,7 +16,7 @@ function Nav() {
                             <Link className="nav-link active" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/about">About</Link>
+                            <HashLink className="nav-link" to="/#about">About</HashLink>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/menu">Menu</Link>

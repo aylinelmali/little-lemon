@@ -1,0 +1,20 @@
+#about{
+    background-color: #f3f0ebbb;
+    padding: 2rem 0;
+}
+
+#about h1, h2{
+    font-family: 'Markazi Text', serif;
+}
+
+.about-img-wrapper {
+    position: relative;
+    height: 100%;
+    padding-top: 1rem;
+}
+
+.about-img {
+  width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
