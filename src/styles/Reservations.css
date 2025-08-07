@@ -1,0 +1,32 @@
+form{
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 1.5rem 1rem;
+}
+
+label{
+    font-family: 'Markazi Text', serif;
+    font-size: 1.5rem;
+}
+
+.container h1{
+    font-family: 'Markazi Text', serif;
+    align-self: center;
+}
+
+.reserve-btn {
+  background-color: #F4CE14;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.75rem 2rem;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  font-family: 'Markazi Text', serif;
+}
+
+.reserve-btn:hover {
+  background-color: #e6bc10;
+  color: #000;
+}
