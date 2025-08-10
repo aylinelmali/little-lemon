@@ -33,21 +33,21 @@ const BookingForm = (props) => {
         <form onSubmit={handleSubmit} className='p-4 rounded bg-light shadow-sm'>
             <div className='mb-3'>
                 <div>
-                    <label htmlFor='res-name' className='form-label'>Name</label>
+                    <label htmlFor='res-name' className='form-label'>Name <span className='req'>*</span></label>
                 </div>
-                <input type="text" id="res-name" value={name} onChange={(e) => setName(e.target.value)} required/>
+                <input className="form-control" type="text" id="res-name" value={name} onChange={(e) => setName(e.target.value)} required/>
             </div>
             <div className='mb-3'>
                 <div>
-                    <label htmlFor="res-date" className="form-label">Choose Date</label>
+                    <label htmlFor="res-date" className="form-label">Choose Date <span className='req'>*</span></label>
                 </div>
-                <input type="date" id="res-date" value={date} min={today} onChange={(e) => handleDateChange(e.target.value)} required/>
+                <input className="form-control" type="date" id="res-date" value={date} min={today} onChange={(e) => handleDateChange(e.target.value)} required/>
             </div>
             <div className='mb-3'>
                 <div>
-                    <label htmlFor="res-time" className="form-label">Choose Time</label>
+                    <label htmlFor="res-time" className="form-label">Choose Time <span className='req'>*</span></label>
                 </div>
-                <select id="res-time" value={time} onChange={(e) => setTime(e.target.value)} required>
+                <select className="form-control" id="res-time" value={time} onChange={(e) => setTime(e.target.value)} required>
                     <option value="">-- Select a time --</option>
                     {props.availableTimes.availableTimes.map(availableTimes => {return <option key=
                         {availableTimes} value={availableTimes}>{availableTimes}</option>})
@@ -56,16 +56,16 @@ const BookingForm = (props) => {
             </div>
             <div className='mb-3'>
                 <div>
-                    <label htmlFor="guests" className="form-label">Number of Guests</label>
+                    <label htmlFor="guests" className="form-label">Number of Guests <span className='req'>*</span></label>
                 </div>
-                <input type="number" placeholder="1" min="1" max="10" id="guests" value={guests}
+                <input className="form-control" type="number" placeholder="1" min="1" max="10" id="guests" value={guests}
                 onChange={(e) => setGuests(parseInt(e.target.value))} required/>
             </div>
             <div className='mb-4'>
                 <div>
                     <label htmlFor="occasion" className="form-label">Occasion</label>
                 </div>
-                <select id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}>
+                <select className="form-control" id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}>
                     <option value="None">None</option>
                     <option value="Birthday">Birthday</option>
                     <option value="Anniversary">Anniversary</option>
