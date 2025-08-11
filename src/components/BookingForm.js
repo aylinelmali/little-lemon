@@ -35,19 +35,19 @@ const BookingForm = (props) => {
                 <div>
                     <label htmlFor='res-name' className='form-label'>Name <span className='req'>*</span></label>
                 </div>
-                <input className="form-control" type="text" id="res-name" value={name} onChange={(e) => setName(e.target.value)} required/>
+                <input className="form-control" type="text" id="res-name" value={name} onChange={(e) => setName(e.target.value)} required aria-required="true"/>
             </div>
             <div className='mb-3'>
                 <div>
                     <label htmlFor="res-date" className="form-label">Choose Date <span className='req'>*</span></label>
                 </div>
-                <input className="form-control" type="date" id="res-date" value={date} min={today} onChange={(e) => handleDateChange(e.target.value)} required/>
+                <input className="form-control" type="date" id="res-date" value={date} min={today} onChange={(e) => handleDateChange(e.target.value)} required aria-required="true"/>
             </div>
             <div className='mb-3'>
                 <div>
                     <label htmlFor="res-time" className="form-label">Choose Time <span className='req'>*</span></label>
                 </div>
-                <select className="form-control" id="res-time" value={time} onChange={(e) => setTime(e.target.value)} required>
+                <select className="form-control" id="res-time" value={time} onChange={(e) => setTime(e.target.value)} required aria-required="true">
                     <option value="">-- Select a time --</option>
                     {props.availableTimes.availableTimes.map(availableTimes => {return <option key=
                         {availableTimes} value={availableTimes}>{availableTimes}</option>})
@@ -59,7 +59,7 @@ const BookingForm = (props) => {
                     <label htmlFor="guests" className="form-label">Number of Guests <span className='req'>*</span></label>
                 </div>
                 <input className="form-control" type="number" placeholder="1" min="1" max="10" id="guests" value={guests}
-                onChange={(e) => setGuests(parseInt(e.target.value))} required/>
+                onChange={(e) => setGuests(parseInt(e.target.value))} required aria-required="true"/>
             </div>
             <div className='mb-4'>
                 <div>
@@ -71,7 +71,7 @@ const BookingForm = (props) => {
                     <option value="Anniversary">Anniversary</option>
                 </select>
             </div>
-            <button type="submit" className="btn reserve-btn" disabled={!formValid}>Make Your Reservation</button>
+            <button type="submit" className="btn reserve-btn" disabled={!formValid} aria-disabled={!formValid}>Make Your Reservation</button>
         </form>
     );
 }
