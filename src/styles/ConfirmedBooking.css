@@ -1,0 +1,21 @@
+.back-btn{
+  background-color: #F4CE14;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.75rem 2rem;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  font-family: 'Markazi Text', serif;
+}
+
+.back-btn:hover {
+  background-color: #e6bc10;
+  color: #000;
+}
+
+.container{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

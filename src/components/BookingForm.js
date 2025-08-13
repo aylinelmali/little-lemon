@@ -71,7 +71,9 @@ const BookingForm = (props) => {
                     <option value="Anniversary">Anniversary</option>
                 </select>
             </div>
-            <button type="submit" className="btn reserve-btn" disabled={!formValid} aria-disabled={!formValid}>Make Your Reservation</button>
+            <div className='text-center'>
+                <button type="submit" className="btn reserve-btn" disabled={!formValid} aria-disabled={!formValid}>Make Your Reservation</button>
+            </div>
         </form>
     );
 }
