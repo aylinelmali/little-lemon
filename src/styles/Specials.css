@@ -36,3 +36,9 @@
 .order-btn:hover {
   background-color: #59766c;
 }
+
+.card-img-top{
+  height: 325px;
+  width: 100%;
+  object-fit: cover;
+}

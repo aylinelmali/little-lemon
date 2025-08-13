@@ -8,7 +8,7 @@ function ConfirmedBooking() {
                 <div className="alert alert-success" role="alert">
                     <h1>Booking has been confirmed!</h1>
                 </div>
-                <Link to="/home"><button className="btn back-btn">Back to Home</button></Link>
+                <Link to="/"><button className="btn back-btn">Back to Home</button></Link>
             </div>
         </>
     );

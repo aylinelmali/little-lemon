@@ -16,7 +16,7 @@ function Specials() {
                     <div className="row">
                         <div className="col md-4 mb-4">
                             <div className="card h-100 bg-light">
-                                <img className="card-img-top" src={salad} alt="Salad" style={{ height: '325px' }}/>
+                                <img className="card-img-top" src={salad} alt="Salad"/>
                                 <div className="card-body">
                                     <h5 className="card-title">Greek Salad</h5>
                                     <p className="card-text">The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
@@ -26,7 +26,7 @@ function Specials() {
                         </div>
                         <div className="col md-4 mb-4">
                             <div className="card h-100 bg-light">
-                                <img className="card-img-top" src={bruschetta} alt="Bruschetta" style={{ height: '325px' }}/>
+                                <img className="card-img-top" src={bruschetta} alt="Bruschetta"/>
                                 <div className="card-body">
                                     <h5 className="card-title">Bruschetta</h5>
                                     <p className="card-text">Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
@@ -36,7 +36,7 @@ function Specials() {
                         </div>
                         <div className="col md-4 mb-4">
                             <div className="card h-100 bg-light">
-                                <img className="card-img-top" src={feta} alt="Phyllo Wrapped feta cheese" style={{ height: '325px' }}/>
+                                <img className="card-img-top" src={feta} alt="Phyllo Wrapped feta cheese"/>
                                 <div className="card-body">
                                     <h5 className="card-title">Phyllo Wrapped Feta</h5>
                                     <p className="card-text">Our delicious French Feta is fried and wrapped in a savory phyllo dough, and topped with sesame seeds and a touch of Greek honey.</p>
