@@ -49,7 +49,7 @@ const BookingForm = (props) => {
                 </div>
                 <select className="form-control" id="res-time" value={time} onChange={(e) => setTime(e.target.value)} required aria-required="true">
                     <option value="">-- Select a time --</option>
-                    {props.availableTimes.availableTimes.map(availableTimes => {return <option key=
+                    {(props.availableTimes?.availableTimes ?? []).map(availableTimes => {return <option key=
                         {availableTimes} value={availableTimes}>{availableTimes}</option>})
                     }
                 </select>
