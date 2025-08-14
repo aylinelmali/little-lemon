@@ -18,7 +18,7 @@ function Specials() {
                             <div className="card h-100 bg-light">
                                 <img className="card-img-top" src={salad} alt="Salad"/>
                                 <div className="card-body">
-                                    <h5 className="card-title">Greek Salad</h5>
+                                    <h5 className="card-title d-flex justify-content-between align-items-center"><span>Greek Salad </span><span className="price">$12.99</span></h5>
                                     <p className="card-text">The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
                                     <Link to="/order-online"><button className="order-btn btn text-light">Order a Delivery</button></Link>
                                 </div>
@@ -28,7 +28,7 @@ function Specials() {
                             <div className="card h-100 bg-light">
                                 <img className="card-img-top" src={bruschetta} alt="Bruschetta"/>
                                 <div className="card-body">
-                                    <h5 className="card-title">Bruschetta</h5>
+                                    <h5 className="card-title d-flex justify-content-between align-items-center"><span>Bruschetta</span> <span className="price">$7.99</span></h5>
                                     <p className="card-text">Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
                                     <Link to="/order-online"><button className="order-btn btn text-light">Order a Delivery</button></Link>
                                 </div>
@@ -38,7 +38,7 @@ function Specials() {
                             <div className="card h-100 bg-light">
                                 <img className="card-img-top" src={feta} alt="Phyllo Wrapped feta cheese"/>
                                 <div className="card-body">
-                                    <h5 className="card-title">Phyllo Wrapped Feta</h5>
+                                    <h5 className="card-title d-flex justify-content-between align-items-center"><span>Phyllo Wrapped Feta</span> <span className="price">$6.99</span></h5>
                                     <p className="card-text">Our delicious French Feta is fried and wrapped in a savory phyllo dough, and topped with sesame seeds and a touch of Greek honey.</p>
                                     <Link to="/order-online"><button className="order-btn btn text-light">Order a Delivery</button></Link>
                                 </div>
